@@ -1,6 +1,3 @@
-# NO LONGER COMPATIBLE
-Hi folks, unfortunately it seems the Parsec team have made a lot of changes to Parsec recently that are good, but break compatability with this plugin for the time being. If and when Parsec becomes available for the Pi 4, I'll be able to resume development on this plugin, but for the time being this is defunct. Please feel free to fork and continue if you can!
-
 # Parsec Launcher for OSMC
 Parsec is a game streaming application used to play video games remotely across a conntected network from a system in the cloud to your home computer. OSMC (short for Open Source Media Center) is a Linux distribution based on Debian that brings Kodi to a variety of devices. This addon brings the two together to create a seamless experience.
 
@@ -17,11 +14,12 @@ Parsec is a game streaming application used to play video games remotely across 
 * Raspberry Pi Device
 * OSMC installed on your device - [Download & Installation Instructions](https://osmc.tv/download/).
 * Parsec installed on your device - [Download & Installation Instructions](https://support.parsecgaming.com/hc/en-us/articles/115002699012-Setting-Up-On-Raspberry-Pi-Raspbian-).
+* Install required dependencies via terminal/ssh: `sudo apt install libatomic1`
 * Parsec installed on a host machine or cloud instance to connect to.
 * USB keyboard (wired or wireless)
 
 ## Installation
-* Download production package **script.parsec.zip** [here](http://dev.grantgarrison.com/projects/script.parsec.zip).
+* Download **script.parsec.zip** from releases
 * Follow the addon installation instructions **HOW-TO:Install add-ons from zip files** [here](https://kodi.wiki/view/HOW-TO:Install_add-ons_from_zip_files).
 
 ## Configuration
