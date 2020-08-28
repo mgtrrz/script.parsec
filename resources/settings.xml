@@ -2,7 +2,7 @@
 <settings>
     <category label="General">
         <setting label="Headless Client Mode" type="bool" id="headless_mode" default="false"/>
-        <setting label="Server ID (located in the 'Manage' window of Parsec on your host machine)" type="number" id="server_id" subsetting="true" default="00000"/>
+        <setting label="Peer ID" type="text" id="peer_id" subsetting="true" default="00000"/>
         <setting type="sep"/>
         <setting label="Parsec Button Overlay" type="bool" id="client_overlay" default="true"/>
         <setting label="Keyboard Shortcut Passthrough" type="bool" id="client_immersive" default="false"/>

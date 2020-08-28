@@ -1,1 +1,1 @@
-sudo su $1 -c "parsec $2"; sudo systemctl start mediacenter;
+sudo su $1 -c "parsecd $2"; sudo systemctl start mediacenter;

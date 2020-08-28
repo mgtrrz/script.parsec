@@ -10,7 +10,7 @@ ADDON_NAME = ADDON.getAddonInfo('name')
 
 OS_USER = ADDON.getSetting('os_user')
 RESOURCE_PATH = xbmc.translatePath(SPECIAL_PATH)
-SERVER_ID = ADDON.getSetting('server_id')
+PEER_ID = ADDON.getSetting('peer_id')
 
 HEADLESS_MODE = ADDON.getSetting('headless_mode')
 
@@ -94,7 +94,7 @@ PARSEC_ARGS = PARSEC_BUTTON + ":" + KEYBOARD_PASSTHROUGH + ":" + WAN_QUALITY + "
 
 
 if HEADLESS_MODE == "true":
-    PARSEC_LAUNCHER = RESOURCE_PATH + "parsec-launcher.sh " + OS_USER + " " + RESOURCE_PATH + " server_id='" + SERVER_ID + "':" + PARSEC_ARGS
+    PARSEC_LAUNCHER = RESOURCE_PATH + "parsec-launcher.sh " + OS_USER + " " + RESOURCE_PATH + " peer_id='" + PEER_ID + "':" + PARSEC_ARGS
 else:
     PARSEC_LAUNCHER = RESOURCE_PATH + "parsec-launcher.sh " + OS_USER + " " + RESOURCE_PATH + " " + PARSEC_ARGS
 
