@@ -1,6 +1,7 @@
 import xbmc
 import xbmcaddon
 import xbmcgui
+import platform
 
 PLUGIN_ID = "script.parsec"
 SPECIAL_PATH = "special://home/addons/{0}/resources/".format(PLUGIN_ID)
@@ -100,4 +101,7 @@ else:
 
 
 import subprocess
-subprocess.call("sh " + PARSEC_LAUNCHER, shell=True)
+if platform.system() == "Windows":
+    subprocess.call('"C:\Program Files\Parsec\parsecd.exe"' + PARSEC_ARGS)
+else:
+    subprocess.call("sh " + PARSEC_LAUNCHER, shell=True)
