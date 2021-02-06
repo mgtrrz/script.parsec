@@ -102,6 +102,6 @@ else:
 
 import subprocess
 if platform.system() == "Windows":
-    subprocess.call('"C:\Program Files\Parsec\parsecd.exe" ' + PARSEC_ARGS)
+    subprocess.call('"C:\Program Files\Parsec\parsecd.exe" peer_id=' + PEER_ID + ":" + PARSEC_ARGS)
 else:
     subprocess.call("sh " + PARSEC_LAUNCHER, shell=True)
